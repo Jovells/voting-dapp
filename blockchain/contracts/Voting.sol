@@ -20,8 +20,8 @@ contract Voting {
     address public owner;
     address public ec;
 
-    constructor() {
-        owner = msg.sender;
+    constructor(address _owner) {
+        owner = _owner;
     }
 
     //modifier to check if is ec
